@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <title>Our Work | Pure Harvest Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Using Inter font */
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        /* Custom colors from index.html */
+        /*
+        'ph-green': '#10b981', 
+        'ph-dark': '#065f46', 
+        'ph-light': '#a7f3d0', 
+        */
+        
+        /* Utility for a subtle image hover effect */
+        .work-card-img {
+            transition: transform 0.5s ease;
+        }
+        .work-card:hover .work-card-img {
+            transform: scale(1.05);
+        }
+        
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ph-green': '#10b981', /* Emerald 500 */
+                        'ph-dark': '#065f46', /* Emerald 800 */
+                        'ph-light': '#a7f3d0', /* Emerald 200 */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2 text-xl font-bold text-ph-dark transition duration-300 hover:text-ph-green">
+                    <img src="Logo.png" alt="Pure Harvest Foundation Logo" class="w-10 h-10 object-contain">
+                    <span>Pure Harvest Foundation</span>
+                </a>
+
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="about-us.html" class="text-gray-600 hover:text-ph-dark font-medium transition duration-300">About Us</a>
+                    <a href="#" class="text-ph-dark font-bold transition duration-300 border-b-2 border-ph-green">Our Work</a>
+                    <a href="index.html#involved" class="text-gray-600 hover:text-ph-dark font-medium transition duration-300">Get Involved</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-ph-dark font-medium transition duration-300">Contact</a>
+                    <a href="donate-now.html" class="bg-ph-green text-white px-4 py-2 rounded-lg font-semibold shadow-lg hover:bg-ph-dark transition duration-300">Donate Now</a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="about-us.html" class="block px-4 py-3 text-gray-700 hover:bg-ph-light/50 transition duration-300">About Us</a>
+            <a href="#" class="block px-4 py-3 text-ph-dark font-bold bg-ph-light/50 transition duration-300">Our Work</a>
+            <a href="index.html#involved" class="block px-4 py-3 text-gray-700 hover:bg-ph-light/50 transition duration-300">Get Involved</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-ph-light/50 transition duration-300">Contact</a>
+            <a href="donate-now.html" class="block text-center bg-ph-dark text-white px-4 py-3 m-2 rounded-lg font-semibold hover:bg-ph-green transition duration-300">Donate Now</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="py-16 bg-ph-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl font-extrabold text-white mb-3">Our Impact in Action</h1>
+                <p class="text-xl text-ph-light max-w-3xl mx-auto">
+                    A visual journey through the community gardens, distribution drives, and workshops powered by your support.
+                </p>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="work-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 hover:shadow-2xl">
+                        <div class="overflow-hidden h-60">
+                            <img src="Images/program.jpg" alt="Volunteers harvesting vegetables" class="work-card-img w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm font-semibold text-ph-green uppercase tracking-wider">Educational Workshops</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Community Upliftment training</h3>
+                            <p class="text-gray-600 text-sm">
+                                Providing structured, hands-on training and workshops focused on life skills and professional development to empower community members for self-sufficiency and improved quality of life.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 hover:shadow-2xl">
+                        <div class="overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/12901835/pexels-photo-12901835.jpeg?auto=compress&cs=tinysrgb&w=800&h=500" alt="Food bank volunteers handing out supplies" class="work-card-img w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm font-semibold text-yellow-600 uppercase tracking-wider">Established Garden</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Promoting Healthy a Lifestyle</h3>
+                            <p class="text-gray-600 text-sm">
+                                Our mature garden areas offer a stable, high-yield food source. They are reliably cultivated to provide a consistent, diverse supply of fresh produce for our community distribution and nutrition programs.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="work-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 hover:shadow-2xl">
+                        <div class="overflow-hidden h-60">
+                            <img src="Images/Conference.jpg" alt="Nutrition workshop in progress" class="work-card-img w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Conference Events Participation</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Spreading and Gaining Agricultural knowledge</h3>
+                            <p class="text-gray-600 text-sm">
+                                Actively participating in national and international agricultural conferences to present research findings, network with industry experts, and gain advanced knowledge on sustainable farming techniques and crop management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 hover:shadow-2xl">
+                        <div class="overflow-hidden h-60">
+                            <img src="Images/harvest.jpg" alt="Volunteers setting up new garden plot" class="work-card-img w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm font-semibold text-ph-green uppercase tracking-wider">Community Gardens</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">New Site: Mophela Plot</h3>
+                            <p class="text-gray-600 text-sm">
+                                Establishing and developing a new collaborative gardening space located in Mophela, designed to foster community engagement, promote sustainable food production, and offer educational opportunities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 hover:shadow-2xl">
+                        <div class="overflow-hidden h-60">
+                            <img src="Images/cook.jpg" alt="Corporate team volunteering" class="work-card-img w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm font-semibold text-ph-dark uppercase tracking-wider">Soup Kitchen</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Food Sourcing</h3>
+                            <p class="text-gray-600 text-sm">
+                                Operating a dedicated soup kitchen facility that provides hot, nutritious meals to support individuals and families facing food insecurity within the local area.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500 hover:shadow-2xl">
+                        <div class="overflow-hidden h-60">
+                            <img src="Images/Chickens.jpg" alt="Jars of preserved food" class="work-card-img w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Broiler Farming</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">Meat Produce</h3>
+                            <p class="text-gray-600 text-sm">
+                                Managing a controlled agricultural operation focused on the efficient and ethical raising of broiler chickens for high-volume, quality meat production and distribution.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="proposal" class="py-16 md:py-24 bg-gray-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl border-t-8 border-ph-dark">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Current Proposal: Mophela Backyard Gardens</h2>
+                    
+                    <p class="text-lg text-gray-600 mb-6 border-l-4 border-ph-green pl-4 italic">
+                        "Mophela community faces challenges concerning food access and nutrition. Backyard
+                        gardening offers a solution by enabling residents to grow fresh produce which will reduce
+                        expenses and promote healthy lifestyle."
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-ph-dark mb-4">Key Objectives:</h3>
+                    <ul class="space-y-3 text-gray-700 list-inside">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-ph-green flex-shrink-0 mt-1 mr-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                            Improve access to fresh nutritious produce.
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-ph-green flex-shrink-0 mt-1 mr-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                            Support 100 households with establishing backyard gardens.
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-ph-green flex-shrink-0 mt-1 mr-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                            Increase community awareness about sustainable farming practises.
+                        </li>
+                    </ul>
+
+                    <div class="text-center mt-8">
+                        <a href="donate-now.html" class="inline-flex items-center justify-center bg-ph-green text-white text-lg font-semibold px-8 py-3 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 hover:bg-ph-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign mr-2"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            Support This Expansion
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="text-xl font-bold mb-4 text-ph-green">Pure Harvest Foundation</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Nourishing Homes, Cultivating Change.
+                        Committed to sustainable food solutions since 2025.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-ph-green transition duration-300"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-ph-green transition duration-300"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-ph-green transition duration-300"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#mission" class="text-gray-400 hover:text-ph-green transition duration-300">About Us</a></li>
+                        <li><a href="#work" class="text-gray-400 hover:text-ph-green transition duration-300">Our Programs</a></li>
+                        <li><a href="#involved" class="text-gray-400 hover:text-ph-green transition duration-300">Get Involved</a></li>
+                        <!-- <li><a href="#" class="text-gray-400 hover:text-ph-green transition duration-300">Annual Report</a></li> -->    <!-- wassup -->
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-ph-green transition duration-300">Privacy Policy</a></li>
+                        <!--<li><a href="#" class="text-gray-400 hover:text-ph-green transition duration-300">Terms of Service</a></li> -->
+                        <li><a href="our-work.html" class="text-gray-400 hover:text-ph-green transition duration-300">Media Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-ph-green transition duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2 text-ph-green"></i>
+                            <a href="mailto:pureharvest56@gmail.com" class="text-gray-400 hover:text-ph-green transition duration-300">pureharvest56@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2 text-ph-green"></i>
+                            <span class="text-gray-400">Tel: 031 262 2108</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="smartphone" class="w-4 h-4 mr-2 text-ph-green"></i>
+                            <span class="text-gray-400">Cell: 072 155 3081</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-2 mt-1 text-ph-green"></i>
+                            <span class="text-gray-400">7 Daphne Neale Drive,<br>New Germany 3610</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-400">&copy; 2025 Pure Harvest Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // JavaScript for mobile menu toggle (copied from index.html)
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Only close if it's not the "Our Work" page's active link
+                if (!link.classList.contains('font-bold')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Function to ensure smooth scrolling to anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

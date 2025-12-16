@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <title>Pure Harvest Foundation | Give Your Time (Volunteer)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Using Inter font, as is standard */
+        body {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ph-green': '#10b981', /* Emerald 500 */
+                        'ph-dark': '#065f46', /* Emerald 800 */
+                        'ph-light': '#a7f3d0', /* Emerald 200 */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2 text-xl font-bold text-ph-dark transition duration-300 hover:text-ph-green">
+                    <img src="Logo.png" alt="Pure Harvest Foundation Logo" class="w-10 h-10 object-contain">
+                    <span>Pure Harvest Foundation</span>
+                </a>
+
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html#mission" class="text-gray-600 hover:text-ph-dark font-medium transition duration-300">About Us</a>
+                    <a href="index.html#work" class="text-gray-600 hover:text-ph-dark font-medium transition duration-300">Our Work</a>
+                    <a href="index.html#involved" class="text-ph-dark font-medium transition duration-300 border-b-2 border-ph-dark">Get Involved</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-ph-dark font-medium transition duration-300">Contact</a>
+                    <a href="donate.html" class="bg-ph-green text-white px-4 py-2 rounded-lg font-semibold shadow-lg hover:bg-ph-dark transition duration-300">
+                        Donate Now
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="index.html#mission" class="block px-4 py-3 text-gray-700 hover:bg-ph-light/50 transition duration-300">About Us</a>
+            <a href="index.html#work" class="block px-4 py-3 text-gray-700 hover:bg-ph-light/50 transition duration-300">Our Work</a>
+            <a href="#" class="block px-4 py-3 bg-ph-light/50 text-ph-dark transition duration-300">Volunteer</a>
+            <a href="index.html#contact" class="block px-4 py-3 text-gray-700 hover:bg-ph-light/50 transition duration-300">Contact</a>
+            <a href="donate.html" class="block text-center bg-ph-dark text-white px-4 py-3 m-2 rounded-lg font-semibold hover:bg-ph-green transition duration-300">
+                Donate Now
+            </a>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-24">
+        <section id="volunteer-intro" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="p-4 inline-block bg-ph-dark/10 rounded-full mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-heart text-ph-dark"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M10 20v-2.1c0-.85.34-1.63.94-2.23A3.97 3.97 0 0 1 15 12h-2"/><circle cx="8" cy="10" r="3"/></svg>
+            </div>
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-4">Give Your Time, Grow Our Mission</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Volunteers are the lifeblood of the Pure Harvest Foundation. Join our dedicated team and contribute directly to feeding our community.
+            </p>
+        </section>
+
+        <section id="volunteer-opportunities" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Current Opportunities</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-ph-green">
+                        <i data-lucide="shovel" class="w-10 h-10 text-ph-dark mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Community Garden Work</h3>
+                        <p class="text-gray-600">
+                            Help us plant, maintain, and harvest fresh produce. No experience needed—just a willingness to get your hands dirty! Shifts available Tuesday and Saturday mornings.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
+                        <i data-lucide="package" class="w-10 h-10 text-yellow-800 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Distribution Assistant</h3>
+                        <p class="text-gray-600">
+                            Sort, pack, and distribute food boxes at our mobile and stationary food bank sites. This is a high-impact, direct service role. Flexible afternoon shifts available.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                        <i data-lucide="book-open-text" class="w-10 h-10 text-blue-800 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Workshop & Education Support</h3>
+                        <p class="text-gray-600">
+                            Assist instructors during nutrition and cooking workshops, manage materials, and greet attendees. Perfect for those who enjoy teaching and community interaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sign-up-form" class="bg-ph-light/40 py-16">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 rounded-xl shadow-2xl">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Volunteer Sign-Up Form</h2>
+                    <p class="text-gray-600 mb-6 text-center">
+                        Fill out the form below and our Volunteer Coordinator will be in touch shortly with next steps and current opportunities.
+                    </p>
+                    
+                    <div id="successMessage" class="hidden bg-ph-light text-ph-dark p-4 rounded-lg text-center mb-6 border border-ph-green transition-opacity duration-500 opacity-0">
+                        <p class="font-semibold text-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle mr-2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 22 3-3"/><path d="M22 4 12 14l-3-3"/></svg>
+                            Volunteer Application Sent Successfully! We will contact you soon.
+                        </p>
+                    </div>
+
+                    <form id="volunteerForm" method="POST" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="first_name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                <input type="text" name="First_Name" id="first_name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-ph-dark focus:border-ph-dark">
+                            </div>
+                            <div>
+                                <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                <input type="text" name="Last_Name" id="last_name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-ph-dark focus:border-ph-dark">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="volunteer_email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" name="_replyto" id="volunteer_email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-ph-dark focus:border-ph-dark">
+                        </div>
+                        <div>
+                            <label for="interest" class="block text-sm font-medium text-gray-700">Area of Interest</label>
+                            <select id="interest" name="Area_of_Interest" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-ph-dark focus:border-ph-dark bg-white">
+                                <option value="" disabled selected>Select an area</option>
+                                <option value="Community Garden Work">Community Garden Work</option>
+                                <option value="Food Distribution Assistant">Food Distribution Assistant</option>
+                                <option value="Workshop & Education Support">Workshop & Education Support</option>
+                                <option value="Any Need">Any Need</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="availability" class="block text-sm font-medium text-gray-700">Availability Summary (e.g., "Weekends," "Mon & Wed afternoons")</label>
+                            <textarea id="availability" name="Availability_Summary" rows="2" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-ph-dark focus:border-ph-dark"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" id="submitButtonVolunteer" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-ph-dark hover:bg-ph-green transition duration-300">
+                                Apply to Volunteer
+                            </button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="text-xl font-bold mb-4 text-ph-green">Pure Harvest Foundation</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Nourishing Homes, Cultivating Change.
+                        Committed to sustainable food solutions since 2025.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-ph-green transition duration-300"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-ph-green transition duration-300"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-ph-green transition duration-300"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#mission" class="text-gray-400 hover:text-ph-green transition duration-300">About Us</a></li>
+                        <li><a href="#work" class="text-gray-400 hover:text-ph-green transition duration-300">Our Programs</a></li>
+                        <li><a href="#involved" class="text-gray-400 hover:text-ph-green transition duration-300">Get Involved</a></li>
+                        </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-ph-green transition duration-300">Privacy Policy</a></li>
+                        <li><a href="our-work.html" class="text-gray-400 hover:text-ph-green transition duration-300">Media Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-ph-green transition duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2 text-ph-green"></i>
+                            <a href="mailto:pureharvest56@gmail.com" class="text-gray-400 hover:text-ph-green transition duration-300">pureharvest56@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2 text-ph-green"></i>
+                            <span class="text-gray-400">Tel: 031 262 2108</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="smartphone" class="w-4 h-4 mr-2 text-ph-green"></i>
+                            <span class="text-gray-400">Cell: 072 155 3081</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-2 mt-1 text-ph-green"></i>
+                            <span class="text-gray-400">7 Daphne Neale Drive,<br>New Germany 3610</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-400">&copy; 2025 Pure Harvest Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // JavaScript for mobile menu toggle (preserved)
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Function to ensure smooth scrolling to anchors (preserved)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Only prevent default if the link is to an internal anchor
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // =========================================================
+        // 🔑 ASYNCHRONOUS VOLUNTEER FORM SUBMISSION LOGIC
+        // =========================================================
+        
+        // Your Formspree Endpoint (Same as in the contact form)
+        const formspreeUrl = "https://formspree.io/f/mgvgrzdr";
+        
+        const form = document.getElementById('volunteerForm'); // Changed ID
+        const successMessage = document.getElementById('successMessage');
+        const submitButton = document.getElementById('submitButtonVolunteer'); // Changed ID
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault(); // Stop the default page redirect/reload
+
+            // Check browser's native validation (required, type="email")
+            if (!form.checkValidity()) {
+                form.reportValidity(); // Show native error messages
+                return; 
+            }
+
+            // Start loading state
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span class="animate-spin inline-block w-5 h-5 border-t-2 border-white rounded-full mr-2"></span> Submitting...';
+            successMessage.classList.add('hidden', 'opacity-0'); // Hide any previous message
+
+            // Gather form data
+            const data = new FormData(form);
+            
+            // Set the dynamic subject line for the email you receive
+            const selectedInterest = data.get('Area_of_Interest');
+            // Using the first and last name from the form for a more informative subject
+            const firstName = data.get('First_Name') || 'New Applicant';
+            const lastName = data.get('Last_Name') || '';
+
+            data.append('_subject', `PHF Volunteer Application: ${firstName} ${lastName} (${selectedInterest})`);
+
+            try {
+                const response = await fetch(formspreeUrl, {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json' 
+                    }
+                });
+
+                if (response.ok) {
+                    // SUCCESS: 
+                    
+                    // 1. Show the success message 
+                    successMessage.classList.remove('hidden');
+                    setTimeout(() => {
+                        successMessage.classList.remove('opacity-0');
+                    }, 10); 
+
+                    // 2. Clear the form fields
+                    form.reset(); 
+
+                    // 3. Re-enable button
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = 'Apply to Volunteer'; // Removed lucide icon for simpler button text in the volunteer form
+                    
+                    // 4. Optionally hide the message after a few seconds
+                    setTimeout(() => {
+                        successMessage.classList.add('opacity-0');
+                        setTimeout(() => {
+                            successMessage.classList.add('hidden');
+                        }, 500); // Wait for opacity transition to finish
+                    }, 5000); // Show message for 5 seconds
+
+                } else {
+                    // FAIL (Formspree error)
+                    alert('Oops! There was an error submitting your application. Please verify your details and try again.');
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = 'Apply to Volunteer';
+                }
+
+            } catch (error) {
+                // NETWORK FAIL
+                alert('A network error occurred. Check your internet connection and try again.');
+                submitButton.disabled = false;
+                submitButton.innerHTML = 'Apply to Volunteer';
+            }
+        });
+    </script>
+</body>
+</html>
