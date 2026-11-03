@@ -1,0 +1,10 @@
+# Static HTML website. Netlify deploys main directly from GitHub.
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "https://www.pureharvestfoundation.co.za/*"
+  to = "https://pureharvestfoundation.co.za/:splat"
+  status = 301
+  force = true
